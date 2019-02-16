@@ -27,7 +27,7 @@ namespace RDotNet.NativeLibrary
         ///                         The registry.</param>
         public NativeUtility(IRegistry registry = null)
         {
-            Registry = (registry == null ? new WindowsRegistry() : registry);
+            Registry = (registry == null ? null /*new WindowsRegistry()*/ : registry);
         }
 
         public static NativeUtility CreateNew()
